@@ -1,0 +1,16 @@
+<section class="comments__wrap">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="comments__heading">Comments</h2>
+        <div *ngIf="itemSelected">
+          <ul class="list-group list-group-flush">
+              <li *ngFor="let comment of comments" class="list-group__item">
+                <div class="comments__avatar"></div>
+                <p class="comments__text">{{comment}}</p> 
+              </li>
+          </ul>
+          <app-comments-editor></app-comments-editor>
+        </div>
+    </div>
+    </div>
+  </section>

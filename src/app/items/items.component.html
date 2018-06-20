@@ -1,0 +1,20 @@
+<section class="items__wrap">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="items__heading">Items</h2>
+      <app-item-editor></app-item-editor>
+      <ul class="list-group list-group-flush">
+          <li *ngFor="let item of items;let i = index" 
+              (click)="selectItem(i)" 
+              [class.active]="i == selected"
+              class="list-group__item">
+              <span>
+                  {{item}}
+                  <app-item-counter [index]="i"></app-item-counter>
+              </span>
+              <button (click)="onDelete(i)" type="button" class="btn list-group__button btn-danger">Delete</button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</section>

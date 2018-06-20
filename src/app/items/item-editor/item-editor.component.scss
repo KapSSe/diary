@@ -1,0 +1,9 @@
+.btn-add{
+    width: 100%;
+    background: #27CCC0;
+    border-color: #27CCC0;
+    outline: none;
+    &:focus{
+        box-shadow: none;
+    }
+}

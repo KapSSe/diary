@@ -1,0 +1,9 @@
+<ul class="list-group list-group-flush">
+    <li class="list-group__item">
+      <div class="comments-editor__avatar"></div>
+      <textarea #comment class="comments-editor__textarea"></textarea> 
+    </li>
+</ul>
+<div class="comments-editor__row">
+    <button (click)="addComment(comment)" class="btn btn-sm btn-primary">Add comment</button>
+</div>

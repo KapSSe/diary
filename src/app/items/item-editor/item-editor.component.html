@@ -1,0 +1,9 @@
+<div class="form-row">
+  <div class="col-sm-8 my-1">
+    <label class="sr-only" for="inlineFormInputName">Name</label>
+    <input #input type="text" class="form-control" id="inlineFormInputName" placeholder="Type name here...">
+  </div>
+  <div class="col-4 my-1">
+    <button type="button" (click)="addItem(input)" class="btn btn-add btn-primary">Add new</button>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.comments{
+    &__wrap{
+        height: 100vh;
+        padding: 15px;
+    }
+    &__heading{
+        font-family: sans-serif;
+        font-weight: 300;
+        padding-left: 10px;
+    }
+    &__avatar{
+        margin-right: 20px;
+        margin-top:5px;
+        background: #FF8A00;
+        width: 60px;
+        height: 50px;
+    }
+    &__text{
+        width: 100%;
+    }
+}
+
+.list-group{
+    margin-top: 15px;
+    &__item{
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        list-style: none;
+        padding: 10px;
+        border-bottom: 1px solid #ced4da;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .comments__wrap {
+        height: unset;
+    }
+}
